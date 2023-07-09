@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+
+<body>
+    <div class="gallery">
+        <button id="left"></button>
+        <img id="image" src="image/01.jpg" alt="Gallery Image">
+        <button id="right"></button>
+    </div>
+
+    <div class="gallery-buttons">
+    </div>
+
+
+    <div class="slider">
+        <div id="sliderThumb" class="slider-thumb"></div>
+    </div>
+
+
+    <div class="accordion" id="accordion1">
+        <div class="accordion__title">Lorem ipsum dolor sit amet. 1</div>
+        <div class="accordion__content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quia modi eveniet? Repellat perspiciatis
+                cum soluta, harum similique aperiam? Adipisci a ratione ad quam rem vero nisi accusamus eaque? Numquam
+                sit molestiae magni dolores dicta?</p>
+        </div>
+    </div>
+
+    <div class="accordion" id="accordion2">
+        <div class="accordion__title">Lorem ipsum dolor sit amet. 2</div>
+        <div class="accordion__content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium vel rerum nobis natus, iste
+                sunt excepturi commodi laudantium deleniti quod praesentium. Unde impedit, voluptate necessitatibus
+                aperiam recusandae in aliquid nihil sunt? Tenetur, error nihil atque ipsum cumque officiis quod.</p>
+        </div>
+    </div>
+
+    <div class="accordion" id="accordion3">
+        <div class="accordion__title">lorem ipsum dolor sit amet 3</div>
+        <div class="accordion__content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quibusdam deserunt veritatis molestiae
+                praesentium numquam nulla eligendi ducimus sequi et!</p>
+        </div>
+    </div>
+    <div class="main-time">
+        <div class="time">
+            <div>
+                <label for="month">Місяць:</label>
+                <input type="number" id="month" min="1" max="12">
+            </div>
+
+            <div>
+                <label for="year">Рік:</label>
+                <input type="number" id="year" min="1900" max="2100">
+            </div>
+        </div>
+        <button id="generateBtn">Генерувати</button>
+    </div>
+
+    <div id="calendarContainer"></div>
+
+
+    <ul id="linksList">
+        <li><a href="http://example.com">index.html</a></li>
+        <li><a href="https://example.com">google.com</a></li>
+        <li><a href="http://example.org">itstep.org</a></li>
+        <li><a href="https://example.org">cat.jpg</a></li>
+        <li><a href="https://example.com">patch</a></li>
+    </ul>
+
+
+    <h1>Список книг</h1>
+
+    <ul id="bookList">
+        <li>Lorem, ipsum.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, debitis.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+    </ul>
+
+
+    <div id="textContainer">
+    </div>
+
+
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Ім'я</th>
+                <th onclick="sortTable(1)">Вік</th>
+                <th onclick="sortTable(2)">Місто</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Іван</td>
+                <td>25</td>
+                <td>Київ</td>
+            </tr>
+            <tr>
+                <td>Марія</td>
+                <td>30</td>
+                <td>Львів</td>
+            </tr>
+            <tr>
+                <td>Олександр</td>
+                <td>20</td>
+                <td>Харків</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <div id="news-container">
+        <ul id="news-list">
+            <li>News 1</li>
+            <li>News 2</li>
+            <li>News 3</li>
+        </ul>
+    </div>
+    <script src="dist/index.js"></script>
+</body>
+
+</html>

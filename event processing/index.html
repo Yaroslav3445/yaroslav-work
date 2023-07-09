@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="tooltip">
+        <button onmouseover="showTooltip(event, 'tooltip tip 1')">Кнопка 1</button>
+        <span id="tooltip1" class="tooltiptext tooltiptext-top">Підказка для кнопки 1</span>
+    </div>
+
+    <div class="tooltip">
+        <button onmouseover="showTooltip(event, 'tool tip 2')">Кнопка 2</button>
+        <span id="tooltip2" class="tooltiptext tooltiptext-top">Підказка для кнопки 2</span>
+    </div>
+
+
+
+    <div class="block">
+        <form class="form">
+            <label for="">Enter your name (name can't contain digits): </label>
+            <input class="input" type="text" id="usernameInput" placeholder="Brendan Eich" oninput="  Input(event)">
+        </form>
+    </div>
+
+
+    <button onclick="openModal()">Open modal</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Hello from modal Window !</p>
+            <button class="close" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    <div id="field">
+        <div id="ball"></div>
+    </div>
+    <div class="contain">
+        <div class="box">
+            <div class="traffic-light">
+                <div id="red" class="light red"></div>
+                <div id="yellow" class="light yellow"></div>
+                <div id="green" class="light green"></div>
+            </div>
+            <button class="next" onclick="changeLight()">NEXT</button>
+        </div>
+    </div>
+
+    <div class="main-book">
+        <div class="book" onclick="selectBook(this)">Книга 1</div>
+        <div class="book" onclick="selectBook(this)">Книга 2</div>
+        <div class="book" onclick="selectBook(this)">Книга 3</div>
+        <div class="book" onclick="selectBook(this)">Книга 4</div>
+        <div class="book" onclick="selectBook(this)">Книга 5</div>
+    </div>
+
+    <ul>
+        <li onclick="toggleCollapse(this)"><span class="bold">local disk (C:)</span>
+            <ul>
+                <li class="normal">Folder </li>
+                <li class="normal">Folder </li>
+            </ul>
+        </li>
+        <li onclick="toggleCollapse(this)"><span class="bold">local disk (D:)</span>
+            <ul>
+                <li class="normal">Folder </li>
+                <li class="normal">Folder </li>
+            </ul>
+        </li>
+    </ul>
+
+    <textarea id="container" cols="40" rows="5">
+Lorem ipsum dolor sit amet consectetur adipisicing
+    </textarea>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

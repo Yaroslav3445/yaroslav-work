@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <div id="slid" class="slid" onclick="change(event)">
+        <div id="slid-thumb" class="slid-thumb"></div>
+    </div>
+
+
+    <div class="gallery">
+        <button id="left-button" class="button left-button" onclick="showLeftImage()" disabled></button>
+        <div id="image-container" class="image-container">
+            <img src="image/01.jpg" alt="Image">
+        </div>
+        <button id="right-button" class="button right-button" onclick="showRightImage()"></button>
+    </div>
+
+    <div class="info-block" onclick="toggleContent(this)">
+        <div class="title">Заголовок 1</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam repellat saepe sit delectus. Quod
+                tempora eius sint expedita deserunt assumenda earum voluptatibus soluta, numquam accusantium a molestiae
+                aperiam! Dolore assumenda molestias reprehenderit inventore sapiente officia, repellat neque accusamus
+                numquam, praesentium, obcaecati amet explicabo ut ipsum ea soluta quas quia?</p>
+        </div>
+    </div>
+    <div class="info-block" onclick="toggleContent(this)">
+        <div class="title">Заголовок 2</div>
+        <div class="content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, cumque.</p>
+        </div>
+    </div>
+    <div class="info-block" onclick="toggleContent(this)">
+        <div class="title">Заголовок 3</div>
+        <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis cumque, vitae a, labore, distinctio
+                illum veniam dolores consectetur veritatis commodi laboriosam quae ex placeat laborum reiciendis saepe
+                quisquam porro odio similique minus velit ab quibusdam sed. Corporis, eum. Illo, ex nemo. Quis
+                perspiciatis omnis praesentium ad nostrum architecto rem quaerat in cumque sit tenetur modi vero, atque
+                dolorum dignissimos nihil deserunt officia suscipit eum optio nam cum fugiat tempora? Et!</p>
+        </div>
+    </div>
+
+    <div class="main-calendar">
+        <div class="calendar-row">
+            <div>
+                <label for="month">Month:</label>
+                <input type="number" id="month" min="1" max="12">
+            </div>
+            <div>
+                <label for="year">Year:</label>
+                <input type="number" id="year">
+            </div>
+        </div>
+        <button class="gen-botton" onclick="generateCalendar()">generate</button>
+        <div id="calendar-container"></div>
+    </div>
+
+    <ul>
+        <li><a href="index.html">index.html</a></li>
+        <li><a href="http://.google.com">google.com</a></li>
+        <li><a href="http://itstep.org">itstep.org</a></li>
+        <li><a href="http://mystat.itstep.org">mstat.itstep.org</a></li>
+        <li><a href="#section">Посилання</a></li>
+    </ul>
+
+    <ul>
+        <li class="book">book 1</li>
+        <li class="book">book 2</li>
+        <li class="book">book 3</li>
+        <li class="book">book 4</li>
+        <li class="book">book 5</li>
+        <li class="book">book 6</li>
+        <li class="book">book 7</li>
+        <li class="book">book 8</li>
+        <li class="book">book 9</li>
+        <li class="book">book 10</li>
+    </ul>
+
+
+    <div id="text-container">
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestias, quos, nulla impedit facere
+            veritatis doloremque ad porro veniam ipsa, distinctio aperiam quasi facilis esse at error nesciunt
+            recusandae fugit et ipsam quas deserunt vero magnam! Beatae sapiente ut natus.
+        </div>
+        <textarea></textarea>
+    </div>
+
+
+    <table class="tab-people" id="data-table">
+        <thead>
+            <tr>
+                <th data-numeric="false">Firstname</th>
+                <th data-numeric="true">Lastname</th>
+                <th data-numeric="true">Age</th>
+                <th data-numeric="false">Company</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>mark</td>
+                <td>Zuckerberg</td>
+                <td>34</td>
+                <td>Facebbok</td>
+            </tr>
+            <tr>
+                <td>lary</td>
+                <td>Page</td>
+                <td>45</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>Timonthy</td>
+                <td>Cook</td>
+                <td>57</td>
+                <td>Apple</td>
+            </tr>
+            <tr>
+                <td>Bill</td>
+                <td>Gates</td>
+                <td>62</td>
+                <td>Microsoft</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>News</h2>
+    <ul id="news-list"></ul>
+    <p id="loading-message" class="loading-message">download...</p>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Create new colors</h1>
+        <div class="info">
+        <div id="error-div" class="error-message"></div>
+            <label for="name-input">Color:</label>
+            <input type="text" id="name-input" required>
+        </div>
+        <div class="info">
+            <label for="type-select">Type:</label>
+            <select id="type-select">
+                <option value="RGB">RGB</option>
+                <option value="RGBA">RGBA</option>
+                <option value="HEX">HEX</option>
+            </select>
+        </div>
+        <div class="info">
+            <label for="code-input">Code:</label>
+            <input type="text" id="code-input" required>
+        </div>
+        <div class="save">
+            <button id="save-button">Save</button>
+        </div>
+        <div id="error-div" class="error-message"></div>
+        <h1>All colors</h1>
+        <div id="colors-container"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
