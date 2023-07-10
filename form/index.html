@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+
+    <form class="seder">
+        <div class="row">
+            <label for="name">Ім'я:</label><input type="text" id="name" required>
+        </div>
+        <div class="row">
+            <label for="message">Повідомлення:</label><textarea id="message" required></textarea>
+        </div>
+        <button type="button" onclick="addMessage()">Додати повідомлення</button>
+    </form>
+
+    <ul id="messageList"></ul>
+
+
+
+
+
+    <form id="quizForm" onsubmit="return submitForm()">
+        <div class="test">
+            <h2>Питання 1:</h2>
+            <p> Яка країна виробник BMW: </p>
+            <input type="radio" name="q1" value="incorrect"> Англія<br>
+            <input type="radio" name="q1" value="correct"> Німеччина<br>
+            <input type="radio" name="q1" value="incorrect"> Італія<br>
+        </div>
+        <div class="test">
+            <h2>Питання 2:</h2>
+            <p>Скільки букв у слові "листок"?</p>
+            <input type="radio" name="q2" value="incorrect"> 3<br>
+            <input type="radio" name="q2" value="correct"> 6<br>
+            <input type="radio" name="q2" value="incorrect"> 7<br>
+
+            <button type="submit">Завершити тест</button>
+
+        </div>
+        <div class="finish-test">
+            <div id="result"></div>
+        </div>
+    </form>
+
+
+    <form class="sect" onsubmit="return submitFor()">
+        <div class="text">
+            <div>
+                <input type="checkbox" id="boldCheckbox" name="styles" value="bold">
+                <label for="boldCheckbox">bold</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="underlineCheckbox" name="styles" value="underline">
+                <label for="underlineCheckbox">underline</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="italicsCheckbox" name="styles" value="italics">
+                <label for="italicsCheckbox">itslics</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="leftCheckbox" name="styles" value="left">
+                <label for="leftCheckbox">left</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="rightCheckbox" name="styles" value="right">
+                <label for="rightCheckbox">right</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="justifyCheckbox" name="styles" value="justify">
+                <label for="justifyCheckbox">justify</label>
+            </div>
+        </div>
+        <div class="lab">
+            <label for="inputText">Введіть текст:</label>
+            <textarea type="text" id="inputText" required></textarea>
+        </div>
+        <button type="submit">Вивести текст</button>
+        <div id="outputText"></div>
+
+    </form>
+
+
+
+
+
+    <form class="university" onsubmit="return itForm()">
+        <div class="group-select">
+            <label for="groupSelect">Група:</label>
+            <select id="groupSelect">
+                <option value="">Оберіть групу</option>
+                <option value="Група 1">Група 1</option>
+                <option value="Група 2">Група 2</option>
+                <option value="Група 3">Група 3</option>
+            </select>
+        </div>
+
+        <div class="pair-select">
+            <label for="pairSelect">Пара:</label>
+            <select id="pairSelect">
+                <option value="">Оберіть пару</option>
+                <option value="Пара 1">Пара 1</option>
+                <option value="Пара 2">Пара 2</option>
+                <option value="Пара 3">Пара 3</option>
+            </select>
+        </div>
+
+        <div class="topic-input">
+            <label for="topicInput">Тема заняття:</label>
+            <input type="text" id="topicInput" required>
+        </div>
+
+        <div>
+            <label>Присутні:</label><br>
+            <input type="checkbox" class="attendance-checkbox" value="Студент 1">
+            <label for="attendanceCheckbox1">Студент 1</label><br>
+            <input type="checkbox" class="attendance-checkbox" value="Студент 2">
+            <label for="attendanceCheckbox2">Студент 2</label><br>
+            <input type="checkbox" class="attendance-checkbox" value="Студент 3">
+            <label for="attendanceCheckbox3">Студент 3</label><br>
+        </div>
+
+        <button type="submit">Відмітити присутність</button>
+
+        <div class="attendance-list">
+            <h2>Вже відмічена присутність:</h2>
+            <ul id="attendanceList"></ul>
+        </div>
+    
+    </form>
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="index.js"></script>
+</body>
+
+</html>
