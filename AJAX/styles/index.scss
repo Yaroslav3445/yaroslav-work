@@ -1,0 +1,50 @@
+.movie {
+    margin-bottom: 10px;
+}
+
+.movie .details {
+    display: none;
+}
+
+#searchForm{
+    width: 600px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+    padding: 5px;
+    margin: auto;
+
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-search {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border: 1px solid black;
+    margin: auto;
+
+    .search {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    input {
+        width: 294px;
+        ;
+    }
+
+    select {
+        width: 300px;
+        margin: 10px 0px 10px 0px;
+    }
+}
