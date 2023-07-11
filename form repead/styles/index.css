@@ -1,0 +1,164 @@
+.seder {
+  width: 600px;
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px;
+}
+.seder input {
+  width: 400px;
+  margin: 10px 0px 10px 0px;
+}
+.seder textarea {
+  width: 400px;
+  margin: 0px 0px 10px 0px;
+}
+.seder .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+#messageList {
+  text-decoration: none;
+  background-color: burlywood;
+  border: 1px solid black;
+}
+
+#quizForm {
+  width: 300px;
+  margin: auto;
+}
+
+.test {
+  background-color: burlywood;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.finish-test {
+  margin-top: 15px;
+  background-color: burlywood;
+}
+
+.sect {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: burlywood;
+  padding: 10px;
+  margin-top: 50px;
+}
+.sect input {
+  width: 400px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.sect button {
+  width: 400px;
+  margin: auto;
+}
+
+.text {
+  display: flex;
+  margin: auto;
+}
+.text div {
+  width: 100px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text Input {
+  margin: 0;
+}
+.text label {
+  margin-right: 20px;
+}
+
+.lab {
+  width: 400px;
+  margin: auto;
+  margin-top: 20px;
+}
+.lab #inputText {
+  width: 393px;
+}
+
+.output-text {
+  font-size: 20px;
+  margin: auto;
+  background-color: #FFF;
+  border: 2px solid black;
+  padding: 4px;
+  margin-top: 5px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-italics {
+  font-style: italic;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.group-select {
+  margin-bottom: 10px;
+}
+
+.pair-select {
+  margin-bottom: 10px;
+}
+
+.topic-input {
+  margin-bottom: 10px;
+}
+
+.attendance-checkbox {
+  margin-right: 10px;
+}
+
+.attendance-list {
+  margin-top: 20px;
+}
+
+.university {
+  width: 500px;
+  margin: auto;
+  background-color: burlywood;
+  padding: 10px;
+  margin-top: 50px;
+}
+.university input {
+  margin: 10px 10px;
+}
+.university label {
+  border-bottom: 1px solid black;
+  margin: 10px 10px;
+}
+.university button {
+  margin-top: 10px;
+}
+
+#attendancelist {
+  width: 100%;
+  border-bottom: 1px solid black;
+}/*# sourceMappingURL=index.css.map */
